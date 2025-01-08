@@ -5,7 +5,6 @@ namespace SenzoryTest;
 
 public partial class MainPage : ContentPage
 {
-   // private static List<View> shapes = [];
     private static Random random = new ();
     public MainPage()
     {
@@ -74,7 +73,5 @@ public partial class MainPage : ContentPage
         AbsoluteLayout.SetLayoutBounds(newShape, new Rect(tapPosition.Value.X, tapPosition.Value.Y, newShape.WidthRequest, newShape.HeightRequest));
 
         MainView.Children.Add(newShape);
-
-
     }
 }
